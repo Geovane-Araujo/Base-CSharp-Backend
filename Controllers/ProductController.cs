@@ -1,4 +1,5 @@
-﻿using Base_Backend.Model;
+﻿using Base_Backend.Config.Database;
+using Base_Backend.Model;
 using Base_Backend.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,8 +31,24 @@ namespace Base_Backend.Controllers
         [Route("Save")]
         public ActionResult<ProductEntity> Save([FromBody ]ProductEntity product)
         {
-            product =  _productRepository.Add(product);
+            if (product.Id == null)
+            {
+                product =  _productRepository.Add(product);
+            }
+            else
+            {
+                product =  _productRepository.Update(product.Id, product);
+                
+            }
+            
             return Ok(product);
+        }
+        
+        [AcceptVerbs("GET")]
+        [Route("Consulting")]
+        public ActionResult<ProductEntity> GetConsulting()
+        {
+            return Ok(_productRepository.FindPrice());
         }
     }
 }

@@ -5,7 +5,7 @@
         TEntity Add(TEntity obj);
         TEntity GetById(int id);
         IEnumerable<TEntity> GetAll();
-        void Update(int id, TEntity obj);
+        TEntity Update(int id, TEntity obj);
         void Remove(int id);
         void Dispose();
     }

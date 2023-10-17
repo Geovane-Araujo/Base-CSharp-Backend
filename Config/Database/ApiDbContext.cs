@@ -6,6 +6,8 @@ namespace Base_Backend.Config.Database
 {
     public class ApiDbContext : IdentityDbContext
     {
+        
+        public ApiDbContext(){}
 
         private string Schema;
         public ApiDbContext(DbContextOptions<ApiDbContext> options) : base(options)
@@ -17,7 +19,7 @@ namespace Base_Backend.Config.Database
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.HasDefaultSchema($"teste{Schema}");
+            modelBuilder.HasDefaultSchema($"public{Schema}");
         }
 
         public override int SaveChanges()

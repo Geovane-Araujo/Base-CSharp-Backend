@@ -6,7 +6,7 @@ namespace Base_Backend.Repository
     public class BaseRepository<TEntity> : IDisposable, IBaseRepository<TEntity> where TEntity : class
     {
 
-        protected readonly ApiDbContext _context;
+        public ApiDbContext _context;
         public BaseRepository(ApiDbContext context)
         {
             _context = context;
@@ -56,13 +56,14 @@ namespace Base_Backend.Repository
             }
         }
 
-        public virtual void Update(int id, TEntity obj)
+        public virtual TEntity Update(int id, TEntity obj)
         {
             try
             {
                 var objDB = _context.Set<TEntity>().Find(id);
                 _context.Entry(obj).State = EntityState.Modified;
                 _context.SaveChanges();
+                return obj;
             }
             catch (Exception ex)
             {
