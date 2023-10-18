@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "aCfWQRjObVh8m/RVCx2Bw5W7aHp1jglNvpwBKl9Hifb91yQpRYICZrwdqPsZiY8vlhxfMUuxMj+VLkR0Ye7CNA==",
+  "dgSpecHash": "v13bxESrFS6GgHCrp4x+/EhtdhvTSFOonfgh7GWjrKfYsC9H6EGTUhPbAAawLje+lGkUZD24qu+hGyzM/JCZWQ==",
   "success": true,
   "projectFilePath": "/home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/Base-Backend.csproj",
   "expectedPackageFiles": [
     "/home/geovane/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/geovane/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.12/microsoft.aspnetcore.authentication.jwtbearer.7.0.12.nupkg.sha512",
     "/home/geovane/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.9/microsoft.aspnetcore.cryptography.internal.7.0.9.nupkg.sha512",
     "/home/geovane/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.9/microsoft.aspnetcore.cryptography.keyderivation.7.0.9.nupkg.sha512",
     "/home/geovane/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.9/microsoft.aspnetcore.identity.entityframeworkcore.7.0.9.nupkg.sha512",
@@ -32,6 +33,8 @@
     "/home/geovane/.nuget/packages/microsoft.identitymodel.abstractions/7.0.3/microsoft.identitymodel.abstractions.7.0.3.nupkg.sha512",
     "/home/geovane/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.0.3/microsoft.identitymodel.jsonwebtokens.7.0.3.nupkg.sha512",
     "/home/geovane/.nuget/packages/microsoft.identitymodel.logging/7.0.3/microsoft.identitymodel.logging.7.0.3.nupkg.sha512",
+    "/home/geovane/.nuget/packages/microsoft.identitymodel.protocols/6.15.1/microsoft.identitymodel.protocols.6.15.1.nupkg.sha512",
+    "/home/geovane/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.15.1/microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512",
     "/home/geovane/.nuget/packages/microsoft.identitymodel.tokens/7.0.3/microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
     "/home/geovane/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/home/geovane/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",

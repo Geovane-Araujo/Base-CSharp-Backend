@@ -105,3 +105,11 @@ D:/Disco D/My Workspace/Base-Backend/bin/Debug/net7.0/libman.json
 /home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/obj/Debug/net7.0/Base-Backend.pdb
 /home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/obj/Debug/net7.0/Base-Backend.genruntimeconfig.cache
 /home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/obj/Debug/net7.0/ref/Base-Backend.dll
+/home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/home/geovane/Documents/workspace/OUtros/Base-CSharp-Backend/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

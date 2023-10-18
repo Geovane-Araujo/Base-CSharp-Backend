@@ -1,3 +1,4 @@
+using Base_Backend.Config;
 using Base_Backend.Config.Database;
 using Base_Backend.Config.Scoped;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,7 @@ builder.Services.AddCors(c =>
 });
 
 ConfigScoped.AddScoped(builder);
+ConfigScoped.AddSecurity(builder);
 
 var app = builder.Build();
 
@@ -29,7 +31,7 @@ app.UseCors("AllowOrigin");
 
 
 app.UseAuthorization();
-
+app.UseMiddleware<BaseMiddleware>();
 app.MapControllers();
 
 app.Run();

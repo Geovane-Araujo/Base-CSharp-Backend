@@ -43,11 +43,11 @@ namespace Base_Backend.Controllers
             
             return Ok(product);
         }
+
         
-        [AcceptVerbs("GET")]
-        [Route("Consulting")]
-        public ActionResult<ProductEntity> GetConsulting()
+        public override ActionResult<ProductEntity> GetConsulting()
         {
+            Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
             return Ok(_productRepository.FindPrice());
         }
     }
