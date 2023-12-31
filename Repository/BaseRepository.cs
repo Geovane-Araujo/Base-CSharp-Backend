@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Base_Backend.Repository
 {
-    public class BaseRepository<TEntity> : IDisposable, IBaseRepository<TEntity> where TEntity : class
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
 
         public ApiDbContext _context;
@@ -25,11 +25,7 @@ namespace Base_Backend.Repository
                 throw ex;
             }
         }
-
-        public virtual void Dispose()
-        {
-            _context.Dispose();
-        }
+        
 
         public virtual IEnumerable<TEntity> GetAll()
         {
@@ -37,12 +33,12 @@ namespace Base_Backend.Repository
             return _context.Set<TEntity>().Skip((1-1) * 10).Take(10).ToList();
         }
 
-        public virtual TEntity GetById(int id)
+        public virtual TEntity FindById(int id)
         {
             return _context.Set<TEntity>().Find(id);
         }
 
-        public virtual void Remove(int id)
+        public virtual void Delete(int id)
         {
             try
             {
@@ -70,5 +66,6 @@ namespace Base_Backend.Repository
                 throw ex;
             }
         }
+        
     }
 }

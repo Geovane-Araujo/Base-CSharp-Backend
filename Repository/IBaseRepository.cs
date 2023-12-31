@@ -3,10 +3,9 @@
     public interface IBaseRepository<TEntity> where TEntity : class
     {
         TEntity Add(TEntity obj);
-        TEntity GetById(int id);
+        TEntity FindById(int id);
         IEnumerable<TEntity> GetAll();
         TEntity Update(int id, TEntity obj);
-        void Remove(int id);
-        void Dispose();
+        void Delete(int id);
     }
 }

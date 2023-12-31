@@ -44,8 +44,9 @@ namespace Base_Backend.Controllers
             return Ok(product);
         }
 
-        
-        public override ActionResult<ProductEntity> GetConsulting()
+        [AcceptVerbs("GET")]
+        [Route("GetConsulting")]
+        public ActionResult<ProductEntity> GetConsulting()
         {
             Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
             return Ok(_productRepository.FindPrice());

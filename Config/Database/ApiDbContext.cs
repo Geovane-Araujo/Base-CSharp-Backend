@@ -21,13 +21,7 @@ namespace Base_Backend.Config.Database
 
             modelBuilder.HasDefaultSchema($"public{Schema}");
         }
-
-        public override int SaveChanges()
-        {
-            return base.SaveChanges();
-        }
-
-
+        
         public DbSet<ProductEntity> ProductContext { get; set; }
     }
 }
